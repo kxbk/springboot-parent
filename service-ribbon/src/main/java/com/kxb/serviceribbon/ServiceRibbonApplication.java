@@ -18,8 +18,8 @@ public class ServiceRibbonApplication {
     }
 
 
-    @Bean
-    @LoadBalanced
+    @Bean  //表示放入spring容器中
+    @LoadBalanced  //开启负载均衡的功能
     RestTemplate restTemplate() {
         return new RestTemplate();
     }
